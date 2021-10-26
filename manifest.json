@@ -1,0 +1,9 @@
+{
+	"id": "obsidisync-plugin",
+	"name": "Obsidisync",
+	"version": "0.0.0",
+	"minAppVersion": "0.9.12",
+	"description": "Sync obsidian files to aws s3.",
+	"author": "Jake Helfrich",
+	"isDesktopOnly": true
+}
