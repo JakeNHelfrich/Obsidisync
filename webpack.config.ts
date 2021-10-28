@@ -10,23 +10,20 @@ module.exports =  {
                 loader: 'ts-loader',
                 options: {
                     transpileOnly: true
-                }
+                },
+                exclude: '/node_modules/',
             }
         ]
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
-        mainFields: ["browser", "module", "main"],
-        alias: {
-            src: path.resolve(__dirname, "src")
-        }
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        libraryTarget: 'commonjs',
     },
     externals: {
         obsidian: "commonjs2 obsidian",
-        moment: "commonjs2 moment"
     }
 }
